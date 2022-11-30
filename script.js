@@ -2,8 +2,7 @@
 function fetchData(){
   
     var inputLocation =document.getElementById('loc').value;
-    var accessKey="b4c9c53945a0a7a0c879c8618d05a74d";
-
+   
     if(inputLocation==='')
     {
         alert('Location or API key cannot be empty!')
