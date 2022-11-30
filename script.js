@@ -2,6 +2,7 @@
 function fetchData(){
   
     var inputLocation =document.getElementById('loc').value;
+    var accessKey=document.getElementById('key').value;
 
     if(inputLocation==='')
     {
@@ -15,9 +16,9 @@ function fetchData(){
 //     accessKey.value="b4c9c53945a0a7a0c879c8618d05a74d";
 //     }
      
-   var accessKey=document.getElementById('key').value;
   
-    const url = "http://api.weatherstack.com/current?access_key="+accessKey+"&query="+inputLocation;
+  
+    let url = "http://api.weatherstack.com/current?access_key="+accessKey+"&query="+inputLocation;
 
     fetch(url)
         .then(a=>a.json())
