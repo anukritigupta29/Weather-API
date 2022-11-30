@@ -9,13 +9,15 @@ function fetchData(){
 
     }
 
-    else
-    {
-    var accessKey  =document.getElementById('key');
-    accessKey.value="b4c9c53945a0a7a0c879c8618d05a74d";
-    }
+//     else
+//     {
+//     var accessKey  =document.getElementById('key');
+//     accessKey.value="b4c9c53945a0a7a0c879c8618d05a74d";
+//     }
      
-    const url = "http://api.weatherstack.com/current?access_key="+accessKey.value+"&query="+inputLocation;
+   var accessKey=document.getElementById('key').value;
+  
+    const url = "http://api.weatherstack.com/current?access_key="+accessKey+"&query="+inputLocation;
 
     fetch(url)
         .then(a=>a.json())
