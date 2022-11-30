@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="main-container">
+    <div class="container1">
+
+        <div class="heading">
+            <h1>Weather API</h1>
+        </div>    
+
+        <div class="input-fields">
+
+            <div class="field">
+                <input type="" placeholder="Location" id="loc">
+        
+            </div>
+
+                <div class="field">
+                    <input type="" placeholder="Access Token" id="key">
+
+                </div>
+            </div>        
+
+                <div class="submit">
+                    <button onclick="fetchData()">
+                        Submit
+                    </button>
+
+                
+                </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="heading2">
+            <h1>Weather Data</h1>
+        </div>
+
+        <div class="sub-container">
+
+        <!--   -->
+                   <table>
+                <tbody id="table-body">
+               
+                    <tr>
+                        <td>Location: <span id="Location"></span> </td>
+                    </tr>
+                    <tr>
+                        <td>Lat: <span id="Lat"></span></td>
+                        <td>Long: <span id="Long"></span></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Time Zone: <span id="Timezone"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed: <span id="WindSpeed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Pressure: <span id="Pressure"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity: <span id="Humidity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Direction: <span id="WindDirection"></span></td>
+                    </tr>
+                    <tr>
+                        <td>UV Index: <span id="UVIndex"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Feels Like: <span id="FeelsLike"></span></td>
+                    </tr>
+
+                    
+                 
+                </tbody>
+
+
+            </table>
+
+        
+    </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
