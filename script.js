@@ -12,8 +12,8 @@ function fetchData(){
 
    
      
-    const url = "http://api.weatherstack.com/current?access_key="+accessKey+"&query="+inputLocation;
-
+  const url = "http://api.weatherstack.com/current?access_key=b4c9c53945a0a7a0c879c8618d05a74d&query="+inputLocation;  
+  
     fetch(url)
         .then(a=>a.json())
 
